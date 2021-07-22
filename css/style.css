@@ -1,0 +1,283 @@
+/* Reset */
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/* Main Styling */
+html,body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* Utility Classes */
+.container {
+  margin: auto;
+  max-width: 1920px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.text-primary {
+  color: #f7c08a;
+}
+
+.lead {
+  font-size: 20px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: #333;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #f7c08a;
+  color: #333;
+}
+
+.btn-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.contact-info{
+  color : #fff;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-primary {
+  background: #f7c08a;
+  color: #333;
+}
+
+.clr {
+  clear: both;
+}
+
+.l-heading {
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+/* Padding */
+.py-1 { padding: 10px 0; }
+.py-2 { padding: 20px 0; }
+.py-3 { padding: 30px 0; }
+
+/* Navbar */
+#navbar {
+  background: #333;
+  color: #fff;
+  overflow: auto;
+}
+
+#navbar a {
+  color: #fff;
+}
+
+#navbar .logo {
+  float: left;
+  padding-top: 20px;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar ul li a:hover, 
+#navbar ul li a.current {
+  background: #444;
+  color: #f7c08a;
+}
+
+
+
+
+/* Features */
+.box {
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align:center;
+}
+
+.box i {
+  margin-bottom: 10px;
+}
+
+
+/* PokeDeck */
+#container {
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+/* PokeDeck */
+#basket {
+  margin: auto;
+
+  flex-wrap: wrap;
+}
+
+.deck {
+  background: #333;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  max-width: 100%;
+  position: relative;
+  flex-wrap: wrap;
+  margin: 0.875em 0.5em;
+}
+
+.image {
+  width: 240px;
+  margin: 0.875em 0.5em;
+  border: 1px solid wheat;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  z-index: 3;
+}
+
+.weights {
+  width: 240px;
+  padding: 5px 0px 0px 150px;
+  line-height: 40px;
+  height: 0.05%;
+  z-index: 5;
+}
+.cards {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #f7c08a;
+  display: flex;
+  text-align: center;
+  flex-basis: auto;
+  max-width: 240px;
+  min-height: 300px;
+  padding-bottom: 10px;
+  position: relative;
+  flex-wrap: wrap;
+  margin: 0.875em 0.5em;
+  transition: all 0.1s;
+}
+
+.cards:hover {
+  transform: scale(1.1);
+}
+
+.spreadOut {
+  display: flex;
+  width: 240px;
+}
+.small {
+  font-size: small;
+  text-align: left;
+  flex-basis: auto;
+  margin-left: 3.5em;
+  list-style: inside none;
+  line-height: 1.2em;
+  flex-wrap: wrap;
+  margin: 0.875em 0.5em;
+}
+.movesLi {
+  font-size: small;
+  text-align: right;
+  list-style: inside none;
+  line-height: 1.2em;
+  flex-wrap: wrap;
+  margin: 0.875em 0.5em;
+}
+.abilityFacts {
+  flex: auto;
+  margin-top: 5px;
+  padding-left: 10px;
+  text-align: start;
+  line-height: 0%;
+}
+.moveFacts {
+  flex: auto;
+  margin-top: 5px;
+  padding-right: 10px;
+  text-align: end;
+  line-height: 0%;
+}
+#features {
+  margin: auto;
+  flex: auto;
+  max-width: 90%;
+  padding: 10px;
+  justify-content: center;
+}
+
+#header-text {
+  margin: 0 auto;
+}
+/* Footer */
+#main-footer {
+  text-align: center;
+  background: #444;
+  color: #fff;
+  padding: 20px;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-break: break-all;  
+}
+@media screen and (max-width: 992px) {
+  .image {
+    background-color: blanchedalmond;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .image {
+    background-color: silver;
+  }
+}
+@media screen and (max-width: 320px) {
+  .image {
+    background-color: olive;
+  }
+}
